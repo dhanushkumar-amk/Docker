@@ -1,0 +1,27 @@
+# yaml
+
+- Yaml stands yaml ain't makeup language
+- previously known as  yet another makeup language
+
+- yaml is a data serialization language
+
+## extension
+ - .yaml and yml both are same
+
+
+# Yaml is a case sensitive
+#  - Orange
+#  - ORANGE
+# both are different
+
+
+--- the three dash denotes the separate of document
+... the three dots denotes the end of the document
+
+# used to represent  the multiple line  use [ | ] symbol
+ex:
+bio: |
+hey my name  is dhanushkumar
+i am 19 year old  developer based on india
+
+

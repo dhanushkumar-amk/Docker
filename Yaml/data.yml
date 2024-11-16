@@ -1,0 +1,98 @@
+# data types
+
+# string
+name: "dhanushkumar"
+firstName: 'dhanushkumar'
+lastName: dhanushkumar
+
+# used to represent  the multiple line  use [ | ] symbol
+bio: |
+hey my name  is dhanushkumar
+i am 19 year old  developer based on india
+
+
+#  use single that will be multiple line we use [ > ] symbol it means the compiler assume it as a single line
+message: >
+Lorem ipsum dolor, sit amet consectetur
+adipisicing elit. Ducimus provident eius voluptatum,
+amet autem veritatis nulla repudiandae
+consequuntur ea voluptate.
+
+# it is same as
+Message: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus provident eius voluptatum, amet autem
+
+
+# numbers
+number: 1234
+marks: 234.5
+
+# boolean value means No or Yes
+booleanValue: No
+# for false => False, FALSE, False then NO n, N for same as true
+
+
+# specify the type
+# yaml automatically specify the data type
+
+zero: !!int 0
+positiveNumber: !!int 45
+negativeNumber: !!int -45
+binaryNumber: !!int 0b11001
+octalNumber: !!int 05643
+HexadecimalNumber: !!int 0x45
+
+expoNumbers: 6.023E56
+
+commaValues: !!int +540_000  # same as 540,000
+
+
+# floating point numbers
+marks: !!float 56.4
+
+# infinity
+infinityFloat: !!float .inf
+infinityInteger: !!int .inf
+
+# not an number
+NOtAnNumber: .nan
+
+# boolean value
+Boolean: !!bool no
+
+# string
+name: !!str dhanushkumar
+
+# null type
+sureName: !!null Null # null, NULL, ~
+# sometimes key value will be null
+~: "the value of null key value"
+
+# Key and value pair
+"apple" : "I am a apple"
+1: "hello world"
+
+# list
+- apple
+- mongo
+- banana
+- grapes
+
+#  block of code
+cities:
+  - chennai
+  - new delhi
+  - mumbai
+  - gujarat
+
+# single line to avoid the intention error
+city : [chennai, mumbai]
+
+# like a json
+{mongo : "yellow fruit", age : 20}
+
+# dates and times aso we add
+date: 2024-11-16
+# datatype
+Date: !!timestamp 2024-11-16
+
+

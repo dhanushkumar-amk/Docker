@@ -1,0 +1,24 @@
+
+# Key and value pair
+"apple" : "I am a apple"
+1: "hello world"
+---
+# list
+- apple
+- mongo
+- banana
+- grapes
+---
+#  block of code
+cities:
+  - chennai
+  - new delhi
+  - mumbai
+  - gujarat
+---
+# single line to avoid the intention error
+city : [chennai, mumbai]
+---
+# like a json
+{mongo : "yellow fruit", age : 20}
+...

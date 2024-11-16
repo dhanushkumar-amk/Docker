@@ -1,0 +1,67 @@
+# sequence datatype
+
+student: !!seq
+  - name
+  - marks
+  - age
+
+# also same as
+Student: [name, marks, age]
+
+# sometimes, some of the keys of the sequence will be empty
+# it is called as sparse sequence
+
+sparse Sequence:
+  - hello
+  - world
+  - Null
+  -
+  - empty
+
+# nested sequence
+-
+  - name
+  - age
+  - marks
+-
+  - apple
+  - banana
+  - mongo
+# key value pair are called maps
+# rep =>  !!map
+
+# nested maps
+name: dhanushkumar
+role:
+  age: 20
+  job: developer
+
+# pairs
+#  sometimes ley may contains duplicates values
+# rep =>  !! pairs
+pair example: !!pairs
+  - job: student
+  - job: developer
+#  this will be an array of hashTables
+
+#sets
+# will allow only unique values
+
+names: !!set
+  ? dhanushkumar
+  ? sanjaykumar
+  ? ram
+  ? arun
+
+# dictionary
+people: !!omap
+  - dhanushkumar:
+    name: dhanushkumar
+    age: 28
+    height: 178
+  -sanjay:
+    name: sanjaykumar
+    age: 20
+    height: 100
+
+
