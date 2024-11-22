@@ -1,5 +1,5 @@
   version: '3'
-  services: 
+  services:
     backend:
       build:
         context: ./backend
@@ -7,21 +7,24 @@
         - "5000:5000"
       networks:
         - mern-network
-      
 
-    frontend: 
-      build: 
+
+    frontend:
+      build:
         context: ./frontend
       ports:
         - "8000:80"
-    
+
+    # mongo image is already present so we directly use the images
     mongo:
       image: mongo:latest
       ports:
         - "27017:27017"
       networks:
         - mern-network
-      
+
+
+# to connect the or computer and docker using bridge
   networks:
     mern-network:
       driver: bridge
