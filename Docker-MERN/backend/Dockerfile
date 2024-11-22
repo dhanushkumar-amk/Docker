@@ -1,3 +1,4 @@
+# backend container
 #use the offical node.js image
 FROM node:18
 
@@ -5,11 +6,11 @@ FROM node:18
 WORKDIR /app
 
 #install dependencies
-COPY package*.json ./app
+COPY package*.json ./
 RUN npm install
 
 #Copy the rest of the application code
-COPY . ./app
+COPY . .
 
 #Expose the backend port
 EXPOSE 5000
